@@ -1,4 +1,5 @@
 import { createContext, ReactNode, useState } from "react";
+import { setCookie } from 'nookies'
 import Router from 'next/router'
 import { api } from "../services/api";
 
@@ -38,11 +39,16 @@ export function AuthProvider({ children }: AuthProviderProps){
 
       const { token, refreshToken, permissions, roles } = response.data
 
-      // We have to store the tokens even if the user refreshes the page
-      // We can store in:
-      // sessionStorage: not available in other sessions (e.g. if the user closes the browser)
-      // localStorage: only available in browser, bad for NextJS (SSR)
-      // cookies: we will use them!!
+      setCookie(undefined, 'nextauth.token', token, {
+        maxAge: 60 * 60 * 24 * 30, // 30 days
+        path: '/' // cookie avilable globally
+      })
+
+      setCookie(undefined, 'nextauth.refreshToken', refreshToken, {
+        maxAge: 60 * 60 * 24 * 30, // 30 days
+        path: '/' // cookie avilable globally
+      })
+
  
       setUser({
         email,
