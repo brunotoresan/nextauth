@@ -1,4 +1,4 @@
-import { GetServerSideProps, GetServerSidePropsContext, GetServerSidePropsResult } from "next"
+import { GetServerSideProps, GetServerSidePropsContext } from "next"
 import { parseCookies } from "nookies"
 
 export function withSSRGuest(fn: GetServerSideProps) {
