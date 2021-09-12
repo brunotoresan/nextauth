@@ -12,11 +12,11 @@
 ## 🔥 About the project
 This is a complete front-end app with a complete process of authentication, authorization, and refresh token using ReactJS and Next.JS. It controls the access to certain routes and components both in the server side and in the client side.
 
-## 💻 Installation and execution of the front end
+## 💻 Installation and execution of this app (front-end)
 To install: `yarn install`<br>
 To run: `yarn dev`
 
-## 💻 Installation and execution of the back end
+## 🔧 Installation and execution of the back-end (necessary)
 To clone: `git clone git@github.com:rocketseat-education/ignite-reactjs-auth-backend.git` from **https://github.com/rocketseat-education/ignite-reactjs-auth-backend**<br>
 To install: `yarn install`<br>
 To run: `yarn dev`
