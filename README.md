@@ -2,7 +2,7 @@
   <img width="70%" src="https://i.imgur.com/pzFFbJi.png" alt="Project Image"/>
 </p>
 
-<h1 align="center">Github Explorer</h1>
+<h1 align="center">Nextauth</h1>
 <p align="center">Rocketseat - Ignite - <strong>Chapter IV</strong></p>
 <p align="center">
   <a href="#-about-the-project">About the project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
